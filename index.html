@@ -6,17 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Mi primera aplicación de React</title>
     <!-- Scripts -->
-    <script src="https://unpkg.com/react@16.4.1/cjs/react.production.min.js"> </script>
-    <script src="https://unpkg.com/react-dom@16.4.1/cjs/react-dom.production.min.js"> </script>
+    <!-- //0 Librería React -->
+    <script src="https://unpkg.com/react@16.4.1/umd/react.production.min.js"> </script>
+    <!-- //1 Librería Auxiliar React para renderizar Dom -->
+    <script src="https://unpkg.com/react-dom@16.4.1/umd/react-dom.production.min.js"> </script>
+    <!-- //2 Traductor de JSX y ES6 -->
     <script src="https://unpkg.com/babel-standalone@6.26.0/babel.min.js"></script>
     <!-- /End Scripts -->
 </head>
 <body>
+    <!-- //3 Etiqueta Raíz donde se renderizará nuestra app -->
     <div id="root"></div>
-    <script type="text/babel">
-    /* 
-        Código React
-    */
-    </script>
+    <!-- //4 Código de nuestra app React -->
+    <script src="index.jsx" type="text/babel"> </script>
 </body>
 </html>
