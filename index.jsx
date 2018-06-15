@@ -2,11 +2,13 @@
 // 0.- Nuestro primer componente
 class Hola extends React.Component {
     render() {
-        return <h1>¡Hola Mundo!</h1>;
+        // 2.- mostrar la propiedad `quien`
+        return <h1>¡Hola {this.props.quien}!</h1>;
     }
 }
 // 1.- Renderizar nuestra App
 ReactDOM.render(
-    <Hola />,
+    // 3.- Pasar un mensaje en la propiedad `quien`
+    <Hola quien="Universo React" />,
     document.getElementById("root")
 )
