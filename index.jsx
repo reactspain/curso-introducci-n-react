@@ -6,6 +6,7 @@ class Hola extends React.Component {
         return <h1>¡Hola {this.props.quien}!</h1>;
     }
 }
+// 4.- Definimos un componente que renderiza otro componente
 class App extends React.Component {
     render() {
         return <Hola quien="Universo React" />;
