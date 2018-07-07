@@ -5,6 +5,14 @@ class Hola extends React.Component {
     state = {
         emoticono: '😎'
     }
+    // 6.- Método donde utilizamos la funcion `setState`
+    cambiarEmoticono() {
+        let emoticono = '🤩'
+        if (emoticono === this.state.emoticono){
+            emoticono = '😎'
+        }
+        this.setState({emoticono})
+    }
     render() {
         // 2.- mostrar la propiedad `quien`
         return <h1>¡Hola {this.props.quien} {this.state.emoticono}!</h1>;
