@@ -1,9 +1,13 @@
 'use strict'
 // 0.- Nuestro primer componente
 class Hola extends React.Component {
+    // 5.- Añadimos la propiedad state
+    state = {
+        emoticono: '😎'
+    }
     render() {
         // 2.- mostrar la propiedad `quien`
-        return <h1>¡Hola {this.props.quien}!</h1>;
+        return <h1>¡Hola {this.props.quien} {this.state.emoticono}!</h1>;
     }
 }
 // 4.- Definimos un componente que renderiza otro componente
