@@ -6,7 +6,7 @@ class Hola extends React.Component {
         emoticono: '😎'
     }
     // 6.- Método donde utilizamos la funcion `setState`
-    cambiarEmoticono() {
+    cambiarEmoticono = () => {
         let emoticono = '🤩'
         if (emoticono === this.state.emoticono){
             emoticono = '😎'
