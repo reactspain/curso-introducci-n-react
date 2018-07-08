@@ -6,7 +6,7 @@ class Hola extends React.Component {
         emoticono: '😎'
     }
     // 6.- Método donde utilizamos la funcion `setState`
-    cambiarEmoticono() {
+    cambiarEmoticono = () => {
         let emoticono = '🤩'
         if (emoticono === this.state.emoticono){
             emoticono = '😎'
@@ -15,7 +15,11 @@ class Hola extends React.Component {
     }
     render() {
         // 2.- mostrar la propiedad `quien`
-        return <h1>¡Hola {this.props.quien} {this.state.emoticono}!</h1>;
+        // 7.- añadimos un botón con el atributo onClick
+        return  <div>
+                    <h1>¡Hola {this.props.quien} {this.state.emoticono}!</h1>
+                    <button onClick={this.cambiarEmoticono}>Cambiar estado</button>
+                </div>;
     }
 }
 // 4.- Definimos un componente que renderiza otro componente
